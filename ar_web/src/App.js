@@ -78,7 +78,7 @@ class App extends Component {
           </div>
         </div>
         <br/>
-        <h4 align='center'>Mobile AR webapp: <a href="https://onionknight621.github.io/ar_demo/ar_mobile/">HERE</a></h4>
+        <h4 align='center'>Mobile AR webapp: <a href="https://onionknight621.github.io/ar_mobile/">HERE</a></h4>
       </div>
     );
   }

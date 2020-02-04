@@ -17,10 +17,28 @@
         </a-box>
     </a-marker>
     <a-marker preset="kanji">
+      <a-box position='0 0.5 0' material='color: black; opacity: 0.75;'>
+        <h1>test</h1>
+        <a-entity position="1 0 0" scale='2 2 2' text="value: TEST; color: purple;"></a-entity>
+      </a-box>
+    </a-marker>
+    <a-marker preset="custom" type="pattern" url="./patterns/pattern-circle.patt">
       <a-sphere position='0 0.5 0' material='color: lightblue; opacity: 0.75;'>
         <h1>test</h1>
         <a-entity position="1 0 0" scale='2 2 2' text="value: TEST; color: purple;"></a-entity>
       </a-sphere>
+    </a-marker>
+    <a-marker preset="custom" type="pattern" url="./patterns/pattern-square.patt">
+      <a-box position='0 0.5 0' material='color: red; opacity: 0.75;'>
+        <h1>test</h1>
+        <a-entity position="1 0 0" scale='2 2 2' text="value: TEST; color: purple;"></a-entity>
+      </a-box>
+    </a-marker>
+    <a-marker preset="custom" type="pattern" url="./patterns/pattern-triangle.patt">
+      <a-box position='0 0.5 0' material='color: green; opacity: 0.75;'>
+        <h1>test</h1>
+        <a-entity position="1 0 0" scale='2 2 2' text="value: TEST; color: purple;"></a-entity>
+      </a-box>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>

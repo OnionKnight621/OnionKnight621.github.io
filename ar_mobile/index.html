@@ -7,25 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
   <title>ARTEST</title>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  <a-scene embedded arjs class="camera-field">
+  <a-scene embedded arjs='sourceType: webcam;' class="camera-field">
     <a-marker preset="hiro">
       <a-box position="0 0.5 0" material="color: white; opacity: 0.75;">
         <a-entity position="1 0 0" scale="2 2 2" text="value: TEST; color: purple;"></a-entity>
       </a-box>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane>
     </a-marker>
     <a-marker type="pattern" url="https://raw.githubusercontent.com/onionknight621/onionknight621.github.io/master/ar_mobile/patterns/pattern-circle.patt">
       <a-sphere position="0 0.5 0" material="color: lightblue; opacity: 0.75;">
         <a-entity position="1 0 0" scale="2 2 2" text="value: TEST; color: purple;"></a-entity>
       </a-sphere>
-    </a-marker>
-    <a-marker type="pattern" url="https://raw.githubusercontent.com/onionknight621/onionknight621.github.io/master/ar_mobile/patterns/pattern-square.patt">
-      <a-box position="0 0.5 0" material="color: red; opacity: 0.75;">
-        <a-entity position="1 0 0" scale="2 2 2" text="value: TEST; color: purple;"></a-entity>
-      </a-box>
     </a-marker>
     <a-marker type="pattern" url="https://raw.githubusercontent.com/onionknight621/onionknight621.github.io/master/ar_mobile/patterns/pattern-triangle.patt">
       <a-box position="0 0.5 0" material="color: green; opacity: 0.75;">
